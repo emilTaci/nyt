@@ -3,10 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>New York Times Search</title>
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta name="author" content="Emil Taciyev" />
+  <link rel="shortcut icon" href="NY-logo.jpg"/>
+  <meta name="description" content="Live news, investigations, opinion, photos and video by the journalists of The New Yasamal Times from more than 15 street around the Baku." />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <title>Emil Times</title>
+  <title>NY(NEW YASAMAL) Times</title>
   <style>
     .panel-body a {
       word-break: break-all;
@@ -49,13 +52,14 @@
 
               <div class="form-group">
                 <label for="pwd">Number of Records to Retrieve:</label>
-                <select class="form-control" id="searchSelect">
-                        <option value="1" selected>1</option>
-                        <option value="5" >5</option>
-                        <option value="10">10</option>
-                    </select>
+                <input value="1" id="mainSelect" class="form-control" type="number" list="searchSelect">
+                <datalist id="searchSelect">
+                        <option>1</option>
+                        <option>5</option>
+                        <option>10</option>
+                        <option>15</option>
+                  </datalist>
               </div>
-                </br></br>
               <div class="form-group">
                 <label for="start-year">Start Year (Optional):</label>
                 <input type="number" class="form-control" id="searchSYear">
